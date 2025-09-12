@@ -4,11 +4,9 @@
 - Клиент не соединяется с серверами Copella
 - Работает на 7-10% быстрее
 - Упрощённый дизайн-кит
-- Полноценные приложения под Windows, macOS и Android.
+- Полноценные приложения под Windows и macOS.
 # Скачать
-- [Windows x86_64](https://kektris.github.io/ncwr/ncwr.exe)
-- Windows arm64 (в разработке)
+- [Windows x64](https://t.me/kektrisgit/2)
 - macOS Universal (в разработке)
-- Android arm-v8a (в разработке)
 ## Веб-версия
 - [ncwr.netlify.app](https://ncwr.netlify.app)
