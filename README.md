@@ -10,3 +10,5 @@
 - Windows arm64 (в разработке)
 - macOS Universal (в разработке)
 - Android arm-v8a (в разработке)
+## Веб-версия
+[ncwr.netlify.app](https://ncwr.netlify.app)
