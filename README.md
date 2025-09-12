@@ -6,10 +6,7 @@
 - Упрощённый дизайн-кит
 - Полноценные приложения под Windows, macOS и Android.
 # Скачать
-[Windows x86_64](https://kektris.github.io/ncwr/ncwr.exe)
-
-Windows arm64 (в разработке)
-
-macOS Universal (в разработке)
-
-Android arm-v8a (в разработке)
+- [Windows x86_64](https://kektris.github.io/ncwr/ncwr.exe)
+- Windows arm64 (в разработке)
+- macOS Universal (в разработке)
+- Android arm-v8a (в разработке)
