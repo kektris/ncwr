@@ -68,7 +68,7 @@ window.CopellaModals = (function(){
       '<div id="tab-content" class="flex-grow">' +
       '<div id="recording-tab" class="tab-panel">' +
       '<div class="space-y-3">' +
-      '<div><h3 class="font-bold text-text-primary mb-2 text-sm">Ð¤Ð¾Ñ€Ð¼Ð°Ñ‚ Ð·Ð°Ð¿Ð¸ÑÐ¸</h3><div class="flex flex-col gap-1" id="formatChooser">' +
+      '<div><h3 class="font-bold text-text-primary mb-2 text-sm">¸</h3><div class="flex flex-col gap-1" id="formatChooser">' +
       '<div class="flex items-center gap-2 p-2 bg-zinc-800 rounded-small cursor-pointer text-sm" data-format="mp3"><div class="custom-radio w-4 h-4 rounded-full border-2 border-border-color flex items-center justify-center ' + (currentFormat === 'mp3' ? 'border-accent' : '') + '"><div class="w-2 h-2 rounded-full bg-accent ' + (currentFormat === 'mp3' ? '' : 'hidden') + '"></div></div><span>MP3 (ÑƒÐ½Ð¸Ð²ÐµÑ€ÑÐ°Ð»ÑŒÐ½Ñ‹Ð¹)</span></div>' +
       '<div class="flex items-center gap-2 p-2 bg-zinc-800 rounded-small cursor-pointer text-sm" data-format="webm"><div class="custom-radio w-4 h-4 rounded-full border-2 border-border-color flex items-center justify-center ' + (currentFormat === 'webm' ? 'border-accent' : '') + '"><div class="w-2 h-2 rounded-full bg-accent ' + (currentFormat === 'webm' ? '' : 'hidden') + '"></div></div><span>WebM (Ð±Ñ‹ÑÑ‚Ñ€Ð¾)</span></div>' +
       '</div></div>' +
@@ -143,7 +143,7 @@ window.CopellaModals = (function(){
     var reader = new FileReader();
     reader.onload = function(e){
       try { var imported = JSON.parse(e.target.result); if (!Array.isArray(imported) || !imported.every(function(s){ return s.name && s.url; })) throw new Error('Invalid file format.'); CopellaState.stations = imported; CopellaStorage.saveStations(); CopellaStations.renderList(); CopellaUI.closeModal(CopellaDOM.settingsModal); CopellaUI.showToast('Ð¡Ñ‚Ð°Ð½Ñ†Ð¸Ð¸ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ñ‹!', 'success'); }
-      catch(err){ CopellaUI.showToast('ÐžÑˆÐ¸Ð±ÐºÐ° Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ð°. ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ Ñ„Ð°Ð¹Ð»Ð°.', 'error'); }
+      catch(err){ CopellaUI.showToast('Неизвестный формат.', 'error'); }
     };
     reader.readAsText(file);
   }
@@ -153,3 +153,4 @@ window.CopellaModals = (function(){
   }
   return { openStationModal: openStationModal, openWelcomeModal: openWelcomeModal, openSettingsModal: openSettingsModal, closeModal: closeModal };
 })();
+
